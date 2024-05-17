@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCII Art Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ASCII Art Generator</h1>
+    <div class="upload-section">
+      <div class="frame" id="upload-frame">
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+          <input type="file" id="file-input" name="image" accept="image/*" required>
+          <button type="submit">Upload</button>
+        </form>
+        <div id="original-image" class="image-container"></div>
+      </div>
+      <button id="convert-button" disabled>Convert to ASCII</button>
+    </div>
+    <div id="ascii-art" class="frame"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
