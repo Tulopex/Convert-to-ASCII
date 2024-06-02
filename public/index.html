@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +12,23 @@
     <div class="frames-container">
       <div class="frame" id="upload-frame">
         <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
-          <input type="file" id="file-input" name="image" accept="image/*" required>
-          <label for="file-input" class="custom-upload-button" id="upload-button">Upload</label>
+          <input type="file" id="file-input" name="image" accept="image/*,.gif" required>
+          <label for="file-input" class="custom-upload-button" id="upload-button">Загрузить</label>
         </form>
         <div id="original-image" class="image-container"></div>
       </div>
       <div class="frame" id="ascii-art"></div>
     </div>
     <div class="buttons-container">
-      <button id="convert-button" disabled>Convert to ASCII</button>
+      <button id="convert-button" disabled>Конвертировать в ASCII</button>
       <div class="dropdown" id="download-button-container" style="display: none;">
-        <button id="download-button" class="dropbtn">Download</button>
+        <button id="download-button" class="dropbtn">Скачать</button>
         <div class="dropdown-content">
           <a href="#" id="download-txt-option">TXT</a>
           <a href="#" id="download-png-option">PNG</a>
         </div>
       </div>
-      <button id="reset-button" style="display: none;">Reset</button>
+      <button id="reset-button" style="display: none;">Сброс</button>
     </div>
   </div>
   <script src="script.js"></script>
